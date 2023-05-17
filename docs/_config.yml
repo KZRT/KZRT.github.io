@@ -22,9 +22,10 @@ title: KZRT's blog
 email: kzrt0123@cau.ac.kr
 description: >- # this means to ignore newlines until "baseurl:"
   Majoring in Computer Science at Chung-Ang University
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "https://kzrt.github.io" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: kkulbamkking
+repository: "KZRT/KZRT.github.io"
+twitter_username: kkulbamkkong
 github_username:  KZRT
 
 # Build settings
@@ -32,6 +33,12 @@ remote-theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+
+# Skin setting
+minimal_mistakes_skin: "mint"
+
+# locale setting
+locale: "ko-KR"
 
 # post Setting
 defaults:
