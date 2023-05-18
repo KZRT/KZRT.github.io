@@ -4,8 +4,9 @@ gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
 gem "minimal-mistakes-jekyll", :github => "mmistakes/minimal-mistakes"
 gem "rake", "~> 13.0.3"
-gem "jekyll-scholar"
-gem "bibtex-ruby"
+gem "kramdown-parser-gfm", group: :jekyll_plugins
+gem "jekyll-scholar", group: :jekyll_plugins
+gem "bibtex-ruby", group: :jekyll_plugins
 gem "rouge"
 gem 'sassc', '~> 2.1.0'
 gem 'webrick', '~> 1.7.0'
