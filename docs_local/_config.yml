@@ -230,6 +230,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-scholar
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -290,3 +291,10 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# Scholar
+
+scholar:
+  style: /_sass/jekyll-scholar/ieee.csl
+  repository: /_bibliography
+  bibliography_list_tag: 'p'
