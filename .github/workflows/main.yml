@@ -1,9 +1,23 @@
 name: Build and Deploy to Github Pages
 
+inputs:
+  name:
+    description: 'Artifact name'
+    required: false
+    default: 'github-pages'
+  path:
+    description: "Path of the directory containing the static assets."
+    required: true
+    default: "_site/"
+  retention-days:
+    description: "Duration after which artifact will expire in days."
+    required: false
+    default: "1"
+
 on:
   push:
     branches:
-      - main  
+      - main
 
 jobs:
   build_and_deploy:
@@ -55,19 +69,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2 # or the latest "vX.X.X" version tag for this action
 
-  inputs:
-    name:
-      description: 'Artifact name'
-      required: false
-      default: 'github-pages'
-    path:
-      description: "Path of the directory containing the static assets."
-      required: true
-      default: "_site/"
-    retention-days:
-      description: "Duration after which artifact will expire in days."
-      required: false
-      default: "1"
+
   runs:
     using: composite
     steps:
